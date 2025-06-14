@@ -1,6 +1,6 @@
 # CloudWatch-Latency-Exporter
 
-Publich ping latency metric to AWS CloudWatch.
+Publish ping latency metric to AWS CloudWatch.
 
 ### Usage: 
 
@@ -30,6 +30,6 @@ docker run --rm -v "$PWD":/app -w /app --env-file .env cloudwatch-latency-export
 
 ### Reference
 
-https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch/client/put_metric_data.html
-https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html
-https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cw-examples.html
+- https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch/client/put_metric_data.html
+- https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html
+- https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cw-examples.html

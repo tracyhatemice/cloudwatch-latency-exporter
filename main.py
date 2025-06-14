@@ -90,7 +90,7 @@ def push_latency_metrics():
     if metric_data:
         try:
             cloudwatch.put_metric_data(
-                Namespace='Tinc',
+                Namespace=os.getenv("NAMESPACE", "LatencyMonitor"),
                 MetricData=metric_data
             )
             logger.info("Metrics successfully pushed to CloudWatch.")
